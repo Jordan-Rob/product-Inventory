@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
-const userURLS = require('./api/user')
+const userURLS = require('./api/auth')
 const productsURLS = require('./api/products')
 
 dotenv.config()
