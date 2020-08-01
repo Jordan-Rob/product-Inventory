@@ -3,7 +3,8 @@ const app = express()
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const userURLS = require('./api/auth')
-//const productsURLS = require('./api/products')
+const multer = require('multer')
+const productsURLS = require('./api/products')
 
 dotenv.config()
 
@@ -12,7 +13,12 @@ mongoose.connect(process.env.DB_ACCESS, { useNewUrlParser: true }, () => {
 })
 app.use(express.json())
 app.use('/user', userURLS)
-//Qapp.use('/products', productsURLS)
+app.use(multer({ dest: "./uploads/" ,
+    rename:  (fieldname, filename) => {
+      return filename;
+    }
+   }).single('photo'));
+app.use('/products', productsURLS)
 
 
 app.listen(7000, ()=> {
