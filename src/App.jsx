@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
+import './index.css'
 import {BrowserRouter, Route} from 'react-router-dom'
 //import Products from './Products'
 //import Product from './Product'
