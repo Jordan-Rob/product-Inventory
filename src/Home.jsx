@@ -1,81 +1,58 @@
 import React, { Component } from 'react';
 
-/*
+
 class Home extends Component {
     render(){
         return(
-            <div>
-                <div className="continer">
+            <div className='text-secondary'>
+                <div className="container" style={{ paddingTop:'20px' }}>
                     <div className="row">
                         <div className="col">
-                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div className="carousel-item active">
-                                        <img src="..." class="d-block w-100" alt="...">
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="...">
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="...">
-                                    </div>
+                            <img style={{ height:'420px' }} src="https://res.cloudinary.com/dbureb5gj/image/upload/v1596462083/xstore/undraw_web_shopping_dd4l_axpa2w.png" alt="" srcset=""/>
+                        </div>
+                        <div className="col col-5" style={{ paddingTop:'110px' }}>
+                            <h2>Welcome to Xstore</h2>
+                            <p style={{ fontSize:'21px' }}> 
+                                Add convinience to the way you manage and 
+                                keep track of your items/products by using our
+                                easy to use and straight forward digital inventory  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container" style={{ marginTop: "80px"}}>
+                    <div className="row">
+                        <div className="col">
+                            <div className="shadow card " style={{ width:'300px',  height:"350px" ,  border:"none", borderRadius:"15px"}}>
+                                <img style={{ height:"90px", width:"90px", marginTop:"30px", marginLeft:"100px",}} src="https://res.cloudinary.com/dbureb5gj/image/upload/v1596464912/xstore/add_fx0em4.png" alt="" className="card-img-top"/>
+                                <div class="card-body">
+                                    <p style={{ textAlign:'center', width:'220px', paddingLeft:'30px'}} class="card-text"> upload your product details into our platform via our add product form.</p>
                                 </div>
-                                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
                             </div>
                         </div>
                         <div className="col">
-
+                            <div className="shadow card " style={{ width:'300px',  height:"350px" , border:"none", borderRadius:"15px"}}>
+                                <img style={{ height:"90px", width:"90px", marginTop:"30px", marginLeft:"100px",}} src="https://res.cloudinary.com/dbureb5gj/image/upload/v1596464904/xstore/office_yubpfi.png" alt="" className="card-img-top"/>
+                                <div class="card-body">
+                                    <p style={{ textAlign:'center', width:'220px', paddingLeft:'30px'}} class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
                         </div>
+                        <div className="col">
+                            <div className="shadow card " style={{ width:'300px',  height:"350px" ,  border:"none", borderRadius:"15px"}}>
+                                <img style={{ height:"90px", width:"90px", marginTop:"30px", marginLeft:"100px",}} src="https://res.cloudinary.com/dbureb5gj/image/upload/v1596465260/xstore/database_bx2qhp.png" alt="" className="card-img-top"/>
+                                <div class="card-body">
+                                    <p style={{ textAlign:'center', width:'220px', paddingLeft:'30px'}} class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         )
     }
 }
-*/
 
-class Home extends Component {
-    render(){
-        return(
-            <div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <div id="carouselExampleFade"  className="carousel slide carousel-fade" data-ride="carousel" >
-                                <div className="carousel-inner">
-                                    <div className="carousel-item">
-                                        <img src="https://res.cloudinary.com/dbureb5gj/image/upload/v1596452345/xstore/dose-media-r6WkZ0gcDa0-unsplash-removebg-preview_jyh5en.png" className="d-block w-100" alt="" />
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img src="https://res.cloudinary.com/dbureb5gj/image/upload/v1596452371/xstore/aram-sabah-jAPFrA9YJsQ-unsplash-removebg-preview_u5jag6.png" className="d-block w-100" alt="" />
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img src="https://res.cloudinary.com/dbureb5gj/image/upload/v1596452356/xstore/norbert-levajsics-dUx0gwLbhzs-unsplash-removebg-preview_z7ugmx.png" className="d-block w-100" alt="" />
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <h3>Welcome Xstore</h3>
-                            <p> 
-                                Add convinience to the way you manage and 
-                                keep trcak of your items/products by using our
-                                easy to use and straight forward digital inventory  
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}    
-
-export default Home
+export default Home;
