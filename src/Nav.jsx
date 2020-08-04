@@ -11,7 +11,7 @@ class Nav extends Component {
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div className="collapse navbar-collapse" id="navbarNav" style={{ marginLeft:"800px" }} >
+                        <div className="collapse navbar-collapse" id="navbarNav" style={{ marginLeft:"750px" }} >
                             <ul className="navbar-nav" style={{  }}>
                                 <li class="nav-item active" >
                                     <Link to='/' class="nav-link" href="#" style={{ color:"#D3D3D3" }}>Home <span class="sr-only">(current)</span></Link>
