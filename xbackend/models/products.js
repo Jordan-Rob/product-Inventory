@@ -8,10 +8,10 @@ const productSchema = mongoose.Schema({
     img: 
       { data: Buffer, contentType: String },
     price:{
-        type:Number,
+        type:Number
     },
     available:{
-        type:Boolean,
+        type:Boolean
     }
 })
 

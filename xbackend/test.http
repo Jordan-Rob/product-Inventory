@@ -1,0 +1,9 @@
+POST http://localhost:7000/products/add-product http/1.1
+Content-Type: application/json
+
+{
+    "name":"wert",
+    "img":"./uploads/dose-media-r6WkZ0gcDa0-unsplash-removebg-preview.png",
+    "price":"300",
+    "available":true
+}

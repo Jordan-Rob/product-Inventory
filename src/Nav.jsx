@@ -13,14 +13,14 @@ class Nav extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav" style={{ marginLeft:"750px" }} >
                             <ul className="navbar-nav" style={{  }}>
-                                <li class="nav-item active" >
-                                    <Link to='/' class="nav-link" href="#" style={{ color:"#D3D3D3" }}>Home <span class="sr-only">(current)</span></Link>
+                                <li className="nav-item active" >
+                                    <Link to='/' className="nav-link" href="#" style={{ color:"#D3D3D3" }}>Home <span className="sr-only">(current)</span></Link>
                                 </li>
-                                <li class="nav-item">
-                                    <Link to='/add-product' class="nav-link" href="#" style={{ color:"#D3D3D3" }}>Add-product</Link>
+                                <li className="nav-item">
+                                    <Link to='/add-product' className="nav-link" href="#" style={{ color:"#D3D3D3" }}>Add-product</Link>
                                 </li>
-                                <li class="nav-item">
-                                    <Link to='/products' class="nav-link" href="#" style={{ color:"#D3D3D3" }}>Your-Products</Link>
+                                <li className="nav-item">
+                                    <Link to='/products' className="nav-link" href="#" style={{ color:"#D3D3D3" }}>Your-Products</Link>
                                 </li>
                             </ul>
                         </div>

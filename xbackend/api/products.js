@@ -6,31 +6,31 @@ const { request } = require('http');
 const { response } = require('express');
 
 
-router.post('/add-product', function(req,res){
+router.post('/add-product', (request,response) => {
     var newItem = new product({
         name:request.body.name,
         img:request.body.img,
         price:request.body.price,
         available:request.body.available
     });
-    newItem.img.data = fs.readFileSync(req.files.userPhoto.path)
+    newItem.img.data = fs.readFileSync(request.body.img)
     newItem.img.contentType = 'image/png';
     newItem.save()
             .then((data)=>{
                 response.json(data)
             })
             .catch((error)=> {
-                response.json(data)
+                response.json(error)
             })
    });
 
-router.get('/all-products', (request, response) => {
+router.get('/', (request, response) => {
        product.find()
             .then((data)=>{
             response.json(data)
             })
             .catch((error)=> {
-                response.json(data)
+                response.json(error)
             })
    })
 
