@@ -87,7 +87,7 @@ class AddProduct extends Component {
                         </div>
                         <div className="form-group">
                             <label htmlFor="img">Image</label>
-                            <input onChange={ this.changedProductimg } value={ this.state.img } type="file" class="form-control-file" id='img'/>
+                            <input name='photo' onChange={ this.changedProductimg } value={ this.state.img } type="file" class="form-control-file" id='img'/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="price">Price</label>
