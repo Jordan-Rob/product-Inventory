@@ -5,8 +5,8 @@ const productSchema = mongoose.Schema({
         type:String,
         min:4
     },
-    img: 
-      { data: Buffer, contentType: String },
+    sku: 
+      { type:String },
     price:{
         type:Number
     },

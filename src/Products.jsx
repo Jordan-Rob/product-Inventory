@@ -42,7 +42,7 @@ class Products extends Component {
                         <thead className='thead-dark'>
                             <tr>
                                 <th>Product name</th>
-                                <th>Product image</th>
+                                <th>Product sku</th>
                                 <th>Product price</th>
                                 <th>Product availability</th>
                             </tr>
@@ -51,7 +51,7 @@ class Products extends Component {
                             {this.productStack()}
                         </tbody>
                     </table>
-                    </div>
+                </div>
                         
             </div>
         )

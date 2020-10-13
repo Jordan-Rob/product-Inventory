@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const fs = require('fs')
+//const fs = require('fs')
 const product = require('../models/products');
 const { request } = require('http');
 const { response } = require('express');
@@ -9,12 +9,12 @@ const { response } = require('express');
 router.post('/add-product', (request,response) => {
     var newItem = new product({
         name:request.body.name,
-        img:request.body.img,
+        sku:request.body.sku,
         price:request.body.price,
         available:request.body.available
     });
-    newItem.img.data = fs.readFileSync(request.body.img)
-    newItem.img.contentType = 'image/png';
+    //newItem.img.data = fs.readFileSync(request.body.img)
+    //newItem.img.contentType = 'image/png';
     newItem.save()
             .then((data)=>{
                 response.json(data)
@@ -58,7 +58,7 @@ router.post('/update/:id', (request, response) => {
     product.findById(request.params.id)
       .then((data) => {
           data.name = request.body.name
-          data.img = request.body.img
+          data.sku = request.body.sku
           data.price = request.body.price
           data.available = request.body.available
           data.save()

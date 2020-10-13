@@ -7,12 +7,12 @@ class AddProduct extends Component {
         this.state = {
             //products:[],
             name:'',
-            img:'',
+            sku:'',
             price:'',
             available:''
         }
         this.changedProductname = this.changedProductname.bind(this)
-        this.changedProductimg = this.changedProductimg.bind(this)
+        this.changedProductsku = this.changedProductsku.bind(this)
         this.changedProductprice = this.changedProductprice.bind(this)
         this.changedProductavail = this.changedProductavail.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
@@ -39,9 +39,9 @@ class AddProduct extends Component {
         })
     }
 
-    changedProductimg(event){
+    changedProductsku(event){
         this.setState({
-            img:event.target.value
+            sku:event.target.value
         })
     }
     
@@ -61,7 +61,7 @@ class AddProduct extends Component {
         event.preventDefault()
         const product = {
             name: this.state.name,
-            img: this.state.img,
+            sku: this.state.sku,
             price: this.state.price,
             available: this.state.available
         }
@@ -86,8 +86,8 @@ class AddProduct extends Component {
                             <input onChange={ this.changedProductname } value={ this.state.name } type="text" className="form-control" id='name'/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="img">Image</label>
-                            <input name='photo' onChange={ this.changedProductimg } value={ this.state.img } type="file" class="form-control-file" id='img'/>
+                            <label htmlFor="sku">Sku</label>
+                            <input name='photo' onChange={ this.changedProductsku } value={ this.state.sku } type="text" class="form-control" id='sku'/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="price">Price</label>
